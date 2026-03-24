@@ -9,7 +9,9 @@ public class Main {
             new Book("ComProg 2", 500)
         };
 
-        for (Product p : items) {
+        for (int i = 0; i < items.length; i++) {
+            Product p = items[i];
+
             System.out.println("--------");
             System.out.println("Type: " + p.getProductType());
             System.out.println("Name: " + p.getItemLabel());
